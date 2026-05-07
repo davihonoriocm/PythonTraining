@@ -75,38 +75,34 @@ print(result)
 
 ## INPUT DATA
 
-x = float(input("Input your first value: "))
-y = float(input("Input your second value: "))
+#x = float(input("Input your first value: "))
+#y = float(input("Input your second value: "))
 
 #### In this case, f-string was used to insert a variable in the middle of the string.
-print(f"Sum = {x+y}")
-print(f"Sub = {x-y}")
-print(f"Mult = {x*y}")
-print(f"Div = {x/y}")
-print(f"Pow = {x**y}")
+#print(f"Sub = {x-y}")
+#print(f"Mult = {x*y}")
+#print(f"Div = {x/y}")
+#print(f"Pow = {x**y}")
+#print(f"Sum = {x+y}")
 
 ## IF, ELIF AND ELSE
 
-t = float(input("input any value:\n"))
-g = float(input("input any value:\n"))
+#t = float(input("input any value:\n"))
+#g = float(input("input any value:\n"))
 
-o = input(""" Digite o valor para escolher sua operação
-1 - soma
-2 - subtração
-3 - Multiplicação
-4 - Divisão
-""")
+# definir valor de o com input de acordo com operação.
 
-if o=="1":
-    print(t+g)
-elif o=="2":
-    print(t-g)
-elif o=="3":
-    print(t*g)
-elif o=="4":
-    print(t/g)
-else:
-    print("opção inválida")
+
+#if o=="1":
+    #print(t+g)
+#elif o=="2":
+    #print(t-g)
+#elif o=="3":
+    #print(t*g)
+#elif o=="4":
+    #print(t/g)
+#else:
+    #print("opção inválida")
 
 ## LOOPS
 ### FOR <- These are used when you know when to stop -  when loops thats limited for anything
@@ -120,3 +116,22 @@ while x <= 5:
     print(x)
     x += 1
 #### A loop that starts with an initial value, updates it on each iteration, and continues while a condition is true.
+
+## LISTS
+fruits = ["Apple","Grapes","Papaya"]
+print(fruits)
+
+for fruit in fruits:
+    print(fruit)
+
+### APPEND <- These are used for include anything on the list
+fruits.append("Banana")
+print(fruits)
+
+### Remove <- These are used for remove anything on the list
+fruits.remove("Papaya")
+print(fruits)
+
+#### Remove for position <- these are used for remove position number
+fruits.pop(1)
+print(fruits)
