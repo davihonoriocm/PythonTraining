@@ -115,3 +115,8 @@ for i in range(5):
 #### in that case "i", its anything and "range" is the top of you get
 
 ### WHILE
+x = 0
+while x <= 5:
+    print(x)
+    x += 1
+#### A loop that starts with an initial value, updates it on each iteration, and continues while a condition is true.
